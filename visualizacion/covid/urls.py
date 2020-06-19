@@ -13,6 +13,6 @@ urlpatterns = [
     path('pois/<int:pk>/', views.PoiDetail.as_view()),
     path('api-auth/', include('rest_framework.urls')),
     # path('rest-auth/', include('rest_auth.urls')),
-    #path('rest-auth/facebook/$', views.FacebookLogin.as_view(), name='fb_login'),
-    #path('rest-auth/facebook/connect/$', views.FacebookConnect.as_view(), name='fb_connect'),
+    path('rest-auth/facebook/', views.FacebookLogin.as_view(), name='fb_login'),
+    path('rest-auth/facebook/connect/', views.FacebookConnect.as_view(), name='fb_connect'),
 ]

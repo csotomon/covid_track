@@ -22,4 +22,4 @@ class TrackingSerializer(serializers.ModelSerializer):
 class PoiSerializer(serializers.ModelSerializer):
     class Meta:
         model = Poi
-        fields = ['name', 'latitude', 'longitude']  
+        fields = ['name', 'latitude', 'longitude', 'rank']  
